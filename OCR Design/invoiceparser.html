@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Create Your First Document Parser</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/styleparser.css">
+<style type="text/css">
+	body{
+		font-family:  lato;
+	}
+</style>
+</head>
+<body>
+
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>                        
+				</button>
+				<a class="navbar-brand logo" href="#"><img alt="Docparser" class="img-responsive" src="images/log-in-screen-logo.png"></a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-icons">
+					<li><a href="#"><i style="font-size:16px" class="fa">&#xf00a;</i></a></li>
+					<li><a href="#"><i style="font-size:16px" class="fa">&#xf039;</i></a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a href="#">
+							<div class="progress">
+								<div class="progress-bar" role="progressbar" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100" style="width:10%">
+									2%
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#"> My Account <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="#">Account 1</a>
+							</li>
+							<li>
+								<a href="#">Logout</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+<div id="navigation_left" class="">
+  <ul class="nav main-menu ">
+    <li><a id="main_item" href="#"><i style='font-size:20px' class='far fa-fw'>&#xf080;</i><span class="">Recent Activity</span></a></li>
+    <li class=""><a id="files_imported" href="#"><i style='font-size:20px' class="fa fa-file fa-fw"></i><span class="">Imported Documents</span></a></li>
+
+            <li class=""><a id="parsing_rules" href="#"><i style="font-size:20px" class="fa">&#xf0e8;</i><span class="">Parsing Rules</span></a></li>
+    
+    <li class=""><a href="/stack/nqgeilhpsmzw/download_links"><i style="font-size:20px" class="fa">&#xf019;</i><span class="">Download Links</span></a></li>
+    <li class=""><a href="/stack/nqgeilhpsmzw/integrations"><i style="font-size:20px" class="fa">&#xf085;</i><span class="">Integrations</span></a></li>
+    <li class=""><a href="/stack/nqgeilhpsmzw/settings"><i style="font-size:20px" class="fa">&#xf0ad;</i><span class="">Settings</span></a></li>
+  </ul>
+</div>
+
+<div id="overview_header" class="page-header">
+		<h1 class="pull-left">
+		Activity Overview Last 30 Days -
+		<small>My Invoice Parser</small>
+		</h1>
+
+		<a href="#" class="results_update_trigger btn pull-right"><i class='fas fa-fw'>&#xf01e;</i></a>
+		<a href="upload.html" class="btn btn-primary pull-right"><i class='fas fa-fw'>&#xf35b;</i>&nbsp;&nbsp;Upload Documents</a>
+	</div> 
+
+<div id="content_pp" class="content_pane">
+	 
+	<div class="overview_chart_wrapper form-fields-wrapper">
+	<div id="chart_files" class="overview_chart jqplot-target" style="position: relative;"><canvas width="1138" height="320" class="jqplot-base-canvas" style="position: absolute; left: 0px; top: 0px;"></canvas><div class="jqplot-title" style="height: 0px; width: 0px;"></div><div class="jqplot-axis jqplot-xaxis" style="position: absolute; width: 1138px; height: 37px; left: 0px; bottom: 0px;"><canvas width="37" height="37" class="jqplot-xaxis-tick" style="text-align: left; position: absolute; left: 24.1432px;"></canvas><canvas width="37" height="37" class="jqplot-xaxis-tick" style="text-align: left; position: absolute; left: 60.2077px;"></canvas><canvas width="37" height="37" class="jqplot-xaxis-tick" style="text-align: left; position: absolute; left: 96.2722px;"></canvas><canvas width="37" height="37" class="jqplot-xaxis-tick" style="text-align: left; position: absolute; left: 132.337px;"></canvas><canvas width="37" height="37" class="jqplot-xaxis-tick" style="text-align: left; position: absolute; left: 168.401px;"></canvas><canvas width="37" height="37" class="jqplot-xaxis-tick" style="text-align: left; position: absolute; left: 204.466px;"></canvas><canvas width="37" height="37" class="jqplot-xaxis-tick" style="text-align: left; position: absolute; left: 240.53px;"></canvas><canvas width="37" height="37" class="jqplot-xaxis-tick" style="text-align: left; position: absolute; left: 276.595px;"></canvas><canvas width="37" height="37" class="jqplot-xaxis-tick" style="text-align: left; position: absolute; left: 312.659px;"></canvas><canvas width="37" height="37" class="jqplot-xaxis-tick" style="text-align: left; position: absolute; left: 348.724px;"></canvas><canvas width="37" height="37" class="jqplot-xaxis-tick" style="text-align: left; position: absolute; left: 384.788px;"></canvas><canvas width="37" height="37" class="jqplot-xaxis-tick" style="text-align: left; position: absolute; left: 420.853px;"></canvas><canvas width="37" height="37" class="jqplot-xaxis-tick" style="text-align: left; position: absolute; left: 456.917px;"></canvas><canvas width="37" height="37" class="jqplot-xaxis-tick" style="text-align: left; position: absolute; left: 492.982px;"></canvas><canvas width="37" height="37" class="jqplot-xaxis-tick" style="text-align: left; position: absolute; left: 529.046px;"></canvas><canvas width="37" height="37" class="jqplot-xaxis-tick" style="text-align: left; position: absolute; left: 565.111px;"></canvas><canvas width="37" height="37" class="jqplot-xaxis-tick" style="text-align: left; position: absolute; left: 601.175px;"></canvas><canvas width="37" height="37" class="jqplot-xaxis-tick" style="text-align: left; position: absolute; left: 637.24px;"></canvas><canvas width="37" height="37" class="jqplot-xaxis-tick" style="text-align: left; position: absolute; left: 673.304px;"></canvas><canvas width="37" height="37" class="jqplot-xaxis-tick" style="text-align: left; position: absolute; left: 709.369px;"></canvas><canvas width="37" height="37" class="jqplot-xaxis-tick" style="text-align: left; position: absolute; left: 745.433px;"></canvas><canvas width="37" height="37" class="jqplot-xaxis-tick" style="text-align: left; position: absolute; left: 781.498px;"></canvas><canvas width="37" height="37" class="jqplot-xaxis-tick" style="text-align: left; position: absolute; left: 817.563px;"></canvas><canvas width="37" height="37" class="jqplot-xaxis-tick" style="text-align: left; position: absolute; left: 853.627px;"></canvas><canvas width="37" height="37" class="jqplot-xaxis-tick" style="text-align: left; position: absolute; left: 889.692px;"></canvas><canvas width="37" height="37" class="jqplot-xaxis-tick" style="text-align: left; position: absolute; left: 925.756px;"></canvas><canvas width="37" height="37" class="jqplot-xaxis-tick" style="text-align: left; position: absolute; left: 961.821px;"></canvas><canvas width="37" height="37" class="jqplot-xaxis-tick" style="text-align: left; position: absolute; left: 997.885px;"></canvas><canvas width="37" height="37" class="jqplot-xaxis-tick" style="text-align: left; position: absolute; left: 1033.95px;"></canvas><canvas width="37" height="37" class="jqplot-xaxis-tick" style="text-align: left; position: absolute; left: 1070.01px;"></canvas><canvas width="37" height="37" class="jqplot-xaxis-tick" style="text-align: left; position: absolute; left: 1106.08px;"></canvas></div><div class="jqplot-axis jqplot-yaxis" style="position: absolute; height: 320px; width: 0px; left: 0px; top: 0px;"><canvas width="19" height="14" class="jqplot-yaxis-tick" style="text-align: left; position: absolute; top: 273px;"></canvas><canvas width="19" height="14" class="jqplot-yaxis-tick" style="text-align: left; position: absolute; top: 220.4px;"></canvas><canvas width="19" height="14" class="jqplot-yaxis-tick" style="text-align: left; position: absolute; top: 167.8px;"></canvas><canvas width="19" height="14" class="jqplot-yaxis-tick" style="text-align: left; position: absolute; top: 115.2px;"></canvas><canvas width="19" height="14" class="jqplot-yaxis-tick" style="text-align: left; position: absolute; top: 62.6px;"></canvas><canvas width="19" height="14" class="jqplot-yaxis-tick" style="text-align: left; position: absolute; top: 10px;"></canvas></div><canvas width="1138" height="320" class="jqplot-grid-canvas" style="position: absolute; left: 0px; top: 0px;"></canvas><canvas width="1118" height="263" class="jqplot-series-shadowCanvas" style="position: absolute; left: 10px; top: 10px;"></canvas><canvas width="1118" height="263" class="jqplot-series-shadowCanvas" style="position: absolute; left: 10px; top: 10px;"></canvas><canvas width="1118" height="263" class="jqplot-series-shadowCanvas" style="position: absolute; left: 10px; top: 10px;"></canvas><canvas width="1118" height="263" class="jqplot-series-canvas" style="position: absolute; left: 10px; top: 10px;"></canvas><canvas width="1118" height="263" class="jqplot-series-canvas" style="position: absolute; left: 10px; top: 10px;"></canvas><canvas width="1118" height="263" class="jqplot-series-canvas" style="position: absolute; left: 10px; top: 10px;"></canvas><canvas width="1118" height="263" class="jqplot-highlight-canvas" style="position: absolute; left: 10px; top: 10px;"></canvas><div class="jqplot-highlighter-tooltip" style="position: absolute; left: -28.6715px; top: 240.167px; display: none;">0 dispatched webhooks</div><canvas width="1118" height="263" class="jqplot-lineRenderer-highlight-canvas" style="position: absolute; left: 10px; top: 10px;"></canvas><canvas width="1118" height="263" class="jqplot-event-canvas" style="position: absolute; left: 10px; top: 10px;"></canvas></div>
+	<div class="clearfix"></div>
+	<div class="overview_bottom_left" style="border-color:#297ce5;">
+	<strong>0</strong>&nbsp;&nbsp;Imported Files
+	</div>
+	<div class="overview_bottom_middle" style="border-color:#80b1f0;">
+	<strong>0</strong>&nbsp;&nbsp;Parsed Data Points
+	</div>
+	<div class="overview_bottom_right" style="border-color:#51a351;">
+	<strong>0</strong>&nbsp;&nbsp;Sent Webhooks
+	</div>
+	</div>
+	<div class="alert alert-info">
+	Please note: Imported files and all parsed data will be removed from our servers after 30 day(s) beyond recall. Click <a href="#">here</a> to change these settings.
+	</div>
+</div>
+
+<div id="import_files">
+	<div id="overview_header" class="page-header page-header-with-sub">
+		<h1 class="pull-left">
+			Upload Files -
+			<small class="upload-info-start">
+			Drag &amp; Drop files to the area below or click to select files from your hard drive.
+			</small>
+			<small class="upload-info-progress" style="display:none;">
+			<strong><span id="upload-counter-top">0</span> files(s)</strong> uploaded. Upload more or confirm in the bottom right corner
+			</small>
+		</h1>
+	</div>
+	<div class="dropzone dz-clickable" id="files_upload">
+		<div class="dz-message dropzone-drop">
+			<div class="dropzone-message">
+				<i class='fas fa-fw fa-create-first'>&#xf35b;</i>
+			  	<span class="upload-info-start">Drag &amp; Drop Files Here Or Click</span>
+				<span class="upload-info-progress" style="display:none">
+					<strong><strong id="upload-counter-center">0</strong> files(s)</strong> imported, keep it coming!
+				</span>
+			  	Drag &amp; Drop the files you want to upload here or click to select them from your hard drive. You can select up to 100 files at once and upload multiple batches.
+			</div>
+		</div>
+	</div>
+	<div class="dropzone-footer">
+		<div class="control-group pull-left api-info">
+			Send files 
+			<a href="/stack/61763/settings/email">by e-mail</a> or via <a href="/myaccount/api">REST API</a> instead
+		</div>
+		<div class="control-group pull-right">
+			<a href="/stack/nqgeilhpsmzw/files" class="btn btn-primary"><i class="fa fa-fw fa-check-circle"></i> I'm Done Uploading</a>
+		</div>
+	</div>
+</div>
+
+<div id="parsing_rules_screen">
+	<div id="overview_header" class="page-header page-header-with-sub">
+	<h1 class="pull-left">
+	Data Parsing Rules
+	<a href="https://support.docparser.com/category/1233-category" target="_blank"><i class="fa fa-fw fa-question-circle"></i></a>
+	</h1>
+	<a href="/field/get/nqgeilhpsmzw/0" class="btn btn-primary pull-right">
+	<i class="fa fa-plus-circle fa-fw"></i> Add Parsing Rule
+	</a>
+	</div>
+
+<div class="content_pane content_pane_full field_list_simple">
+	<table id="field_list_table" class="table table-hover table-list" data-stack-id="61763">
+		<tbody class="ui-sortable">
+			<tr class="field_row" id="field_476213">
+				<td class="drag_handle"></td>
+				<td class="field_row_template row_pointer">
+				<i class="fa fa-fw">&#xf292;</i>
+				</td>
+				<td class="field_label row_pointer">
+				Invoice Number      </td>
+				<td class="field_actions">
+				<a class="btn pull-right row_action" href="/field/get/nqgeilhpsmzw/476213/">
+				<i class="fa fa-fw">&#xf044;</i> Edit</a>
+				<a class="btn pull-right clone_field" href="#modal_field_duplicate_476213" data-toggle="modal" data-id="476213" stack-id="61763">
+				<i class="fa fa-fw">&#xf0c5;</i> Duplicate</a>
+				<a class="btn pull-right delete_field" href="#modal_field_delete_476213" data-toggle="modal" data-id="476213" stack-id="61763">
+				<i class="fa fa-fw">&#xf1f8;</i> Delete</a>
+				</td>
+			</tr>
+		<tr class="field_row" id="field_476214">
+			<td class="drag_handle"></td>
+			<td class="field_row_template row_pointer">
+			<i class="far fa-fw fa-calendar-alt"></i>
+			</td>
+			<td class="field_label row_pointer">
+			Invoice Date      </td>
+			<td class="field_actions">
+			<a class="btn pull-right row_action" href="/field/get/nqgeilhpsmzw/476214/">
+			<i class="fa fa-fw">&#xf044;</i> Edit</a>
+			<a class="btn pull-right clone_field" href="#modal_field_duplicate_476214" data-toggle="modal" data-id="476214" stack-id="61763">
+			<i class="fa fa-fw">&#xf0c5;</i> Duplicate</a>
+			<a class="btn pull-right delete_field" href="#modal_field_delete_476214" data-toggle="modal" data-id="476214" stack-id="61763">
+			<i class="fa fa-fw">&#xf1f8;</i> Delete</a>
+			</td>
+		</tr>
+		<tr class="field_row" id="field_476215">
+			<td class="drag_handle"></td>
+			<td class="field_row_template row_pointer">
+			<i class="fa fa-fw">&#xf155;</i>
+			</td>
+			<td class="field_label row_pointer">
+			Totals      </td>
+			<td class="field_actions">
+			<a class="btn pull-right row_action" href="/field/get/nqgeilhpsmzw/476215/">
+			<i class="fa fa-fw">&#xf044;</i> Edit</a>
+			<a class="btn pull-right clone_field" href="#modal_field_duplicate_476215" data-toggle="modal" data-id="476215" stack-id="61763">
+			<i class="fa fa-fw">&#xf0c5;</i> Duplicate</a>
+			<a class="btn pull-right delete_field" href="#modal_field_delete_476215" data-toggle="modal" data-id="476215" stack-id="61763">
+			<i class="fa fa-fw">&#xf1f8;</i> Delete</a>
+			</td>
+			</tr>
+			<tr class="field_row_add" id="field_476215">
+			<td colspan="4">
+			<a href="/field/get/nqgeilhpsmzw/0/">
+			<i class="fa fa-fw">&#xf055;</i></i> Add Parsing Rule</a>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+</div>
+</div>
+
+
+
+<footer class="footer">
+	© 2019 <a target="_blank" href="https://docparser.com/">docparser.com</a>
+</footer>
+
+<script type="text/javascript">
+	$( document ).ready(function() {
+    $("#import_files").hide();
+    $("#parsing_rules_screen").hide();
+    $( "#main_item" ).click(function() {
+  		$("#import_files").hide();
+  		$("#parsing_rules_screen").hide();
+  		$("#content_pp").show();
+	});
+    $( "#files_imported" ).click(function() {
+  		$("#content_pp").hide();
+  		$("#parsing_rules_screen").hide();
+  		$("#import_files").show();
+	});
+	$( "#parsing_rules" ).click(function() {
+  		$("#content_pp").hide();
+  		$("#parsing_rules_screen").show();
+  		$("#import_files").hide();
+	});
+});
+</script>
+
+</body>
+</html>

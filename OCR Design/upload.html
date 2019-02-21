@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Create Your First Document Parser</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/styleparser.css">
+</head>
+<body>
+
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>                        
+				</button>
+				<a class="navbar-brand logo" href="#"><img alt="Docparser" class="img-responsive" src="images/log-in-screen-logo.png"></a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-icons">
+					<li><a href="#"><i style="font-size:16px" class="fa">&#xf00a;</i></a></li>
+					<li><a href="#"><i style="font-size:16px" class="fa">&#xf039;</i></a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a href="#">
+							<div class="progress">
+								<div class="progress-bar" role="progressbar" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100" style="width:10%">
+									2%
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#"> My Account <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="#">Account 1</a>
+							</li>
+							<li>
+								<a href="#">Logout</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+<div id="navigation_left" class="">
+  <ul class="nav main-menu ">
+    <li class="active"><a href="/stack/nqgeilhpsmzw/overview"><i style='font-size:20px' class='far fa-fw'>&#xf080;</i><span class="">Recent Activity</span></a></li>
+    <li class=""><a href="/stack/nqgeilhpsmzw/files"><i style='font-size:20px' class="fa fa-file fa-fw"></i><span class="">Imported Documents</span></a></li>
+
+            <li class=""><a href="/stack/nqgeilhpsmzw/fields"><i style="font-size:20px" class="fa">&#xf0e8;</i><span class="">Parsing Rules</span></a></li>
+    
+    <li class=""><a href="/stack/nqgeilhpsmzw/download_links"><i style="font-size:20px" class="fa">&#xf019;</i><span class="">Download Links</span></a></li>
+    <li class=""><a href="/stack/nqgeilhpsmzw/integrations"><i style="font-size:20px" class="fa">&#xf085;</i><span class="">Integrations</span></a></li>
+    <li class=""><a href="/stack/nqgeilhpsmzw/settings"><i style="font-size:20px" class="fa">&#xf0ad;</i><span class="">Settings</span></a></li>
+  </ul>
+</div>
+
+<div id="overview_header" class="page-header page-header-with-sub">
+    <h1 class="pull-left">
+      Upload Files -
+      <small class="upload-info-start">
+        Drag &amp; Drop files to the area below or click to select files from your hard drive.
+      </small>
+      <small class="upload-info-progress" style="display:none;">
+        <strong><span id="upload-counter-top">0</span> files(s)</strong> uploaded. Upload more or confirm in the bottom right corner
+      </small>
+    </h1>
+  </div>
+
+  <div class="dropzone dz-clickable" id="files_upload">
+  <div class="dz-message dropzone-drop">
+    <div class="dropzone-message">
+      <i class='fas fa-fw fa-create-first'>&#xf35b;</i>
+              <span class="upload-info-start">Drag &amp; Drop Files Here Or Click</span>
+            <span class="upload-info-progress" style="display:none">
+        <strong><strong id="upload-counter-center">0</strong> files(s)</strong> imported, keep it coming!
+      </span>
+              Drag &amp; Drop the files you want to upload here or click to select them from your hard drive. You can select up to 100 files at once and upload multiple batches.
+          </div>
+  </div>
+</div>
+
+<div class="dropzone-footer">
+    <div class="control-group pull-left api-info">
+        Send files <a href="/stack/61763/settings/email">by e-mail</a> or via <a href="/myaccount/api">REST API</a> instead
+    </div>
+    <div class="control-group pull-right">
+        <a href="/stack/nqgeilhpsmzw/files" class="btn btn-primary"><i class="fa fa-fw fa-check-circle"></i> I'm Done Uploading</a>
+    </div>
+  </div>
+<footer class="footer">
+	© 2019 <a target="_blank" href="https://docparser.com/">docparser.com</a>
+</footer>
+
+</body>
+</html>
