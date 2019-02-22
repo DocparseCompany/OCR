@@ -2,6 +2,7 @@
 	padding-left: 0px;
 	padding-right: 0px;
 }
+.mt-30{margin-top: 30px;}
 a{
 	text-decoration: none;
 }
@@ -297,7 +298,7 @@ li {
     color: #263644;
 }
 .pull-right {
-    float: right;
+    float: right !important;
 }
 .page-header .btn-primary {
     color: #fff;
@@ -320,6 +321,9 @@ li {
     box-shadow: 4px 4px 14px -8px rgba(0,0,0,0.75);
     font-family: lato;
 }
+.btn-default{
+  background: #fafafd;
+}
 .btn {
     display: inline-block;
     *display: inline;
@@ -333,7 +337,6 @@ li {
     vertical-align: middle;
     cursor: pointer;
     color: #193353;
-    /* background: #fafafd; */
     border: 1px solid #DDDDDD;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
@@ -617,4 +620,248 @@ li {
 }
 tr:hover .drag_handle {
     background: #297ce5!important;
+}
+
+/* add parser */
+#field_edit {
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 51px;
+    bottom: 0px;
+}
+#field_edit.with_sidebar #field_edit_left_sidebar {
+    left: 0px;
+}
+#field_edit_left_sidebar {
+    position: absolute;
+    top: 0px;
+    left: -259px;
+    bottom: 0px;
+    width: 259px;
+    background: #f5f5fd;
+    border-right: 1px solid #ccc;
+    transition: 0.5s;
+}
+#field_edit_left_sidebar .field_edit_header, #field_edit_left_sidebar .field_edit_footer {
+    background: #0d2434;
+    color: #FFF;
+}
+#field_edit_left_sidebar .field_edit_header {
+    padding-right: 36px;
+}
+.field_edit_header {
+    background: #193353;
+    color: #B6BBC1;
+    padding: 8px 20px;
+    line-height: 31px;
+    height: 47px;
+}
+#field_edit_left_sidebar .title {
+    text-decoration: none;
+}
+.field_edit_header span.title {
+    color: rgba(255, 255, 255, 1);
+}
+.field_edit_header_right {
+    width: auto;
+}
+#field_edit.with_sidebar #field_edit_sidebar_toggle {
+    right: 0px;
+    background: transparent;
+    color: #516075;
+}
+#field_edit_left_sidebar #field_edit_sidebar_toggle {
+    position: absolute;
+    background: #516075;
+    color: #fff;
+    z-index: 1000;
+    display: block;
+    line-height: 48px;
+    padding: 0px 5px;
+    width: 5px;
+    top: 0px;
+    height: 47px;
+    text-decoration: none;
+    transition: 0.5s;
+    right: -16px;
+}
+.field_edit_header a, .field_edit_footer a {
+    color: #fff;
+}
+#field_list_left_table_wrapper {
+    position: absolute;
+    top: 47px;
+    left: 0px;
+    right: 0px;
+    bottom: 70px;
+    overflow: auto;
+}
+#field_list_left_table tr td.drag_handle {
+    background: #fff!important;
+}
+#field_list_left_table tr td.drag_handle {
+    width: 4px!important;
+}
+.table-list td {
+    vertical-align: middle;
+}
+#field_list_left_table tr:first-of-type td {
+    border-top: 0px;
+}
+#field_list_left_table .field_label {
+    padding-left: 20px;
+    padding-right: 10px;
+}
+#field_list_left_table tr td {
+    line-height: 26px;
+}
+.field_row .field_label {
+    padding-left: 0px;
+}
+.table-list .row_pointer {
+    cursor: pointer;
+}
+#field_list_left_table .field_actions {
+    width: 52px;
+    padding: 11px 10px 11px 5px;
+}
+.field_row .field_actions {
+    width: 405px;
+    padding-right: 20px;
+}
+.field_edit_header {
+    background: #193353;
+    color: #B6BBC1;
+    padding: 8px 20px;
+    line-height: 31px;
+    height: 47px;
+}
+#field_edit_0 #templates_wrapper {
+    overflow: scroll;
+    position: absolute;
+    top: 48px;
+    bottom: 70px;
+    left: 0px;
+    right: 0px;
+    padding: 20px 20px 50px 20px;
+}
+#field_edit_0 .field_edit_footer {
+    left: 0px;
+    width: 100%;
+}
+.field_edit_footer {
+    background: #193353;
+    color: #B6BBC1;
+    position: absolute;
+    bottom: 0px;
+    line-height: 70px;
+    height: 70px;
+    left: 0px;
+    right: 0px;
+    padding-left: 15px;
+    padding-right: 15px;  
+}
+#field_edit_0 #templates_wrapper {
+    overflow: scroll;
+    position: absolute;
+    top: 48px;
+    bottom: 70px;
+    left: 0px;
+    right: 0px;
+    padding: 20px 20px 50px 20px;
+}
+.field_edit_header span.title {
+    color: rgba(255, 255, 255, 1);
+}
+.field_edit_header span.title span {
+    font-weight: 300;
+    color: #B6BBC1;
+}
+#field_edit_0 #templates_wrapper #templates_wrapper_inner {
+    max-width: 1140px;
+    margin: 0px auto;
+}
+#field_edit_0 #templates_wrapper h1.stack_template_header:first-of-type {
+    margin-top: 0px;
+}
+#field_edit_0 #templates_wrapper h1.stack_template_header {
+    color: rgba(25, 51, 83, 0.75);
+    display: block;
+    margin-top: 20px;
+    font-size: 18px;
+    margin-bottom: 0px;
+    line-height: 1.4;
+}
+#field_edit_0 #templates_wrapper .stack_template_sub_header {
+    color: rgba(33, 53, 78, 0.52);
+    display: block;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+.field_template_button {
+    display: block;
+    float: left;
+    text-decoration: none;
+    text-align: center;
+    background: #FFF;
+    padding: 18px 12px;
+    width: calc(25% - 12px);
+    min-height: 112px;
+    cursor: pointer;
+    margin: 0px 12px 12px 0px;
+    padding: 30px 20px 30px 20px;
+    line-height: 1.4;
+    background: #297ce5;
+    border-color: #297ce5;
+    transition: 0.3s;
+    -webkit-box-shadow: 4px 4px 14px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 4px 14px -8px rgba(0,0,0,0.75);
+    box-shadow: 4px 4px 14px -8px rgba(0,0,0,0.75);
+    border-radius: 2px;
+}
+.field_template_button i {
+    margin: 0px auto 10px auto;
+    color: #FFF;
+    display: block;
+    font-size: 44px;
+}
+.field_template_button strong {
+    display: block;
+    font-weight: 300;
+    font-size: 17px;
+    color: #FFF;
+}
+.field_template_button span.muted {
+    display: block;
+    opacity: 0.6;
+    color: #fff;
+    font-size: 12px;
+}
+.muted {
+    color: #818a91;
+}
+.stack_template_field_group {
+    margin-bottom: 0px;
+}
+#field_edit.with_sidebar #field_edit_content_pane {
+    left: 260px;
+}
+#field_edit_content_pane {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    transition: 0.5s;
+}
+#field_list_left_table .btn {
+    border: 0px;
+    padding: 2px;
+    margin-left: 2px;
+}
+.table-hover tbody tr > td .btn {
+    opacity: 0;
+    margin-left: 10px;
+    background: #fff;
 }

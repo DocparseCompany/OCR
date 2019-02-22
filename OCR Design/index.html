@@ -1,127 +1,140 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Parser</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-	<script src="js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 
-<div class="container-fluid">
-	<nav class="navbar navbar-default menu">
-		<div class="container">
-			<div class="navbar-header">
-				 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>                        
-			      </button>
-			<a class="navbar-brand logo" href="#"><img alt="Docparser" src="images/logo.png"></a>
-			</div>
-			<div class="collapse navbar-collapse" id="myNavbar">
-			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#">how it works</a></li>
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Solutions <span class="caret"></span></a>
-					<div class="dropdown-menu" id="solutions-dropdown">
-						<div class="items-left" id="solutions-left">
-							<strong>Featured Document Types</strong>
-							<ul class="">
-				                <li>
-									<a href="#" title="Accounts Payable and Invoice Processing and Automation">Invoices and Accounts Payable</a>
-								</li>
-				                <li>
-									<a href="#" title="Extract Data From PDF Purchase and Sales Orders">Purchase and Sales Orders</a>
-								</li>
-				                <li>
-									<a href="#" title="Shipping Orders and Delivery Notes Processing">Shipping and Delivery Orders</a>
-								</li>
-				                <li>
-									<a href="#" title="Legal Documents">Form Based Contracts</a>
-								</li>
-				                <li>
-									<a href="#" title="HR Forms and Applications">HR and Admin Documents</a>
-								</li>
-				                <li>
-									<a href="#g" title="Parse PDF Price Lists - PDF Processing">Product Catalogs</a>
-								</li>
-				                <li>
-									<a href="#" title="Automated Bank and Credit Card Statements Processing">Bank &amp; Credit Card Statements</a>
-								</li>
-				                <li>
-									<a href="#" title="Convert PDF Forms to Excel">Fillable PDF Forms</a>
-								</li>
-				                <li>
-									<a href="#" title="PDF to Text - Other Use Cases">Other Document Types</a>
-								</li>
-				            </ul>
-						</div>
-						<div class="items-right" id="solutions-right">
-							<strong>Featured Industries</strong>
-							<ul class="">
-				                <li>
-									<a href="#" title="PDF Processing for Accountant and Bookkeepers">Accounting and Bookkeeping</a>
-								</li>
-				                <li>
-									<a href="#" title="Streamline Retail Business Operations">Brick and Mortar Retail</a>
-								</li>
-				                <li>
-									<a href="#" title="PDF Scraper Software for Data Providers and Agencies">Data Service Providers</a>
-								</li>
-				                <li>
-									<a href="#" title="Automated Document Processing For Ecommerce Businesses">Ecommerce</a>
-								</li>
-				                <li>
-									<a href="/industries/food" title="Food Industry">Food and Catering</a>
-								</li>
-				                <li>
-									<a href="/industries/logistics-warehousing" title="Logistics and Warehouse Automation with Docparser">Logistics and Warehousing</a>
-								</li>
-				                <li>
-									<a href="/industries/manufacturing" title="Automate Order Processes for Manufacturing">Manufacturing</a>
-								</li>
-				                <li>
-									<a href="/industries/printing" title="Printing and Publishing">Printing and Publishing</a>
-								</li>
-				                <li>
-									<a href="/industries/wholesale" title="Automate Wholesale and Distribution Order Fulfillment">Wholesale and Distribution</a>
-								</li>
-					        </ul>
-						</div>
-					</div>
-				</li>
-				<li><a href="#">integrations</a></li>
-				<li><a href="#">pricing</a></li>
-				<li><a href="#">blog</a></li>
-				<li><a href="#">log-in</a></li>
-				<li class="active"><a href="https://app.docparser.com/account/signup?plan=unknown" class="">Start Free Trial</a></li>
-			</ul>
-		</div>
-		</div>
-	</nav>
-	<section id="home" class="section-wrapper section-wrapper-no-flex section-space">
-		<div class="section-content overlay-content">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12 col-md-12">
-						<h1 class="heading">Extract Data From <span id="use-case-rotator" class="rotate">Warranty Agreements</span><span class="typed-cursor">|</span><br>And Automate Your Business</h1>
-						<h2 class="sub-heading">Docparser boils down business documents to the essentials and moves the extracted data to where it belongs.Say good-bye to manual data entry and automate your business.</h2>
-						<div class="signup-button-wrapper">
-							<a href="#" class="btn" id="home-watch-video"><i class="far fa-fw fa-play-circle"></i> Watch 3-minute demo</a>
-							<a href="https://app.docparser.com/account/signup" class="btn btn-primary">Start Free Trial </a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-</div>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content="HTTrack is an easy-to-use website mirror utility. It allows you to download a World Wide website from the Internet to a local directory,building recursively all structures, getting html, images, and other files from the server to your computer. Links are rebuiltrelatively so that you can freely browse to the local site (works with any browser). You can mirror several sites together so that you can jump from one toanother. You can, also, update an existing mirror site, or resume an interrupted download. The robot is fully configurable, with an integrated help" />
+	<meta name="keywords" content="httrack, HTTRACK, HTTrack, winhttrack, WINHTTRACK, WinHTTrack, offline browser, web mirror utility, aspirateur web, surf offline, web capture, www mirror utility, browse offline, local  site builder, website mirroring, aspirateur www, internet grabber, capture de site web, internet tool, hors connexion, unix, dos, windows 95, windows 98, solaris, ibm580, AIX 4.0, HTS, HTGet, web aspirator, web aspirateur, libre, GPL, GNU, free software" />
+	<title>List of available projects - HTTrack Website Copier</title>
+	<!-- Mirror and index made by HTTrack Website Copier/3.49-2 [XR&CO'2014] -->
+
+	<style type="text/css">
+	<!--
+
+body {
+	margin: 0;  padding: 0;  margin-bottom: 15px;  margin-top: 8px;
+	background: #77b;
+}
+body, td {
+	font: 14px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	}
+
+#subTitle {
+	background: #000;  color: #fff;  padding: 4px;  font-weight: bold; 
+	}
+
+#siteNavigation a, #siteNavigation .current {
+	font-weight: bold;  color: #448;
+	}
+#siteNavigation a:link    { text-decoration: none; }
+#siteNavigation a:visited { text-decoration: none; }
+
+#siteNavigation .current { background-color: #ccd; }
+
+#siteNavigation a:hover   { text-decoration: none;  background-color: #fff;  color: #000; }
+#siteNavigation a:active  { text-decoration: none;  background-color: #ccc; }
+
+
+a:link    { text-decoration: underline;  color: #00f; }
+a:visited { text-decoration: underline;  color: #000; }
+a:hover   { text-decoration: underline;  color: #c00; }
+a:active  { text-decoration: underline; }
+
+#pageContent {
+	clear: both;
+	border-bottom: 6px solid #000;
+	padding: 10px;  padding-top: 20px;
+	line-height: 1.65em;
+	background-image: url(backblue.gif);
+	background-repeat: no-repeat;
+	background-position: top right;
+	}
+
+#pageContent, #siteNavigation {
+	background-color: #ccd;
+	}
+
+
+.imgLeft  { float: left;   margin-right: 10px;  margin-bottom: 10px; }
+.imgRight { float: right;  margin-left: 10px;   margin-bottom: 10px; }
+
+hr { height: 1px;  color: #000;  background-color: #000;  margin-bottom: 15px; }
+
+h1 { margin: 0;  font-weight: bold;  font-size: 2em; }
+h2 { margin: 0;  font-weight: bold;  font-size: 1.6em; }
+h3 { margin: 0;  font-weight: bold;  font-size: 1.3em; }
+h4 { margin: 0;  font-weight: bold;  font-size: 1.18em; }
+
+.blak { background-color: #000; }
+.hide { display: none; }
+.tableWidth { min-width: 400px; }
+
+.tblRegular       { border-collapse: collapse; }
+.tblRegular td    { padding: 6px;  background-image: url(fade.gif);  border: 2px solid #99c; }
+.tblHeaderColor, .tblHeaderColor td { background: #99c; }
+.tblNoBorder td   { border: 0; }
+
+
+// -->
+</style>
+
+</head>
+
+<body>
+<table width="76%" border="0" align="center" cellspacing="0" cellpadding="3" class="tableWidth">
+	<tr>
+	<td id="subTitle">HTTrack Website Copier - Open Source offline browser</td>
+	</tr>
+</table>
+<table width="76%" border="0" align="center" cellspacing="0" cellpadding="0" class="tableWidth">
+<tr class="blak">
+<td>
+	<table width="100%" border="0" align="center" cellspacing="1" cellpadding="0">
+	<tr>
+	<td colspan="6"> 
+		<table width="100%" border="0" align="center" cellspacing="0" cellpadding="10">
+		<tr> 
+		<td id="pageContent"> 
+<!-- ==================== End prologue ==================== -->
+
+
+<h1 ALIGN=Center>Index of locally available projects:</H1>
+  <table border="0" width="100%" cellspacing="1" cellpadding="0">
+		<TH>
+		<BR/>
+			No categories
+		</TH>
+		<TR>
+		  <TD BACKGROUND="fade.gif">
+                    &middot; <A HREF="Parser/index.html">Parser</A>
+   		  </TD>
+		</TR>
+	</TABLE>
+	<BR>
+	<H6 ALIGN="RIGHT">
+         <I>Mirror and index made by HTTrack Website Copier [XR&CO'2008]</I>
+	</H6>
+	<!-- Mirror and index made by HTTrack Website Copier/3.49-2 [XR&CO'2014] -->
+	<!-- Thanks for using HTTrack Website Copier! -->
+
+<!-- ==================== Start epilogue ==================== -->
+		</td>
+		</tr>
+		</table>
+	</td>
+	</tr>
+	</table>
+</td>
+</tr>
+</table>
+
+<table width="76%" border="0" align="center" valign="bottom" cellspacing="0" cellpadding="0">
+	<tr>
+	<td id="footer"><small>&copy; 2008 Xavier Roche & other contributors - Web Design: Leto Kauler.</small></td>
+	</tr>
+</table>
 
 </body>
+
 </html>
+
+
